@@ -99,7 +99,24 @@ int main()
     printf("\n\nAverage Waiting Time=%d\n",avg_wt);
     printf("\nAverage Turnaround Time=%d\n",avg_tat);
 
+    int u;
 
+    printf("Choose : \n\t1. Return for another entry \n\t2. Exit");
+    scanf("%d" , &u);
+    switch(u)
+        {
+            case 1:
+                return main();
+                break;
+            case 2:
+                exit(0);
+                break;
+            default:
+                printf("Exiting the simulation .. ");
+                exit(0);
+                break;
+
+        }
 
 
    //return main();
